@@ -1,17 +1,14 @@
-import { t } from '@/lib/i18n'
-export default function HomePage(){
+export default function Home(){
   return (
-    <div className="space-y-10">
-      <section className="grid md:grid-cols-2 gap-8 items-center">
-        <div>
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">{t('home.title')}</h1>
-          <p className="text-gray-300 mb-6">3D baskı ürünlerde kalite, hız ve özel tasarım seçenekleri.</p>
-          <a href="/products" className="inline-block bg-gradient-to-r from-brand-primary to-brand-secondary text-white px-5 py-3 rounded-md">{t('home.cta')}</a>
-        </div>
-        <div className="relative h-64 md:h-80 rounded-lg border border-brand-border flex items-center justify-center">
-          <img src="/logo-icon.svg" alt="3Diverse" className="h-40 opacity-80"/>
-        </div>
-      </section>
-    </div>
+    <section>
+      <h1 style={{fontSize:32,fontWeight:800, background:'linear-gradient(90deg,#6A00F4,#C86BFA)', WebkitBackgroundClip:'text', color:'transparent'}}>Katman Katman Üretimin Yeni Adresi</h1>
+      <p style={{color:'#cbd5e1', marginTop:8}}>3D baskı ürünlerde kalite, hız ve özel tasarım.</p>
+      <div style={{marginTop:16}}>
+        <a href="/products" style={{padding:'10px 16px', borderRadius:8, background:'linear-gradient(90deg,#6A00F4,#C86BFA)', color:'#fff'}}>Ürünleri Keşfet</a>
+      </div>
+      <div style={{marginTop:24, border:'1px solid #27272A', borderRadius:12, padding:16, display:'flex', justifyContent:'center'}}>
+        <img src="/logo-icon.svg" alt="logo" height={120} style={{opacity:.85}}/>
+      </div>
+    </section>
   )
 }

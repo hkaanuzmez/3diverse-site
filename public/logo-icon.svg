@@ -1,16 +1,1 @@
-<svg width="340" height="340" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="340" height="340" fill="transparent"/>
-  <path d="M60 110 C140 60, 200 60, 270 110 C200 150, 140 150, 60 110 Z" stroke="url(#grad1)" stroke-width="18" fill="none" stroke-linecap="round"/>
-  <path d="M60 170 C140 120, 200 120, 270 170 C200 210, 140 210, 60 170 Z" stroke="url(#grad1)" stroke-width="18" fill="none" stroke-linecap="round"/>
-  <path d="M90 220 C150 260, 220 260, 260 215 C300 170, 260 120, 200 110" stroke="url(#grad2)" stroke-width="20" fill="none" stroke-linecap="round"/>
-  <defs>
-     <linearGradient id="grad1" x1="0" y1="0" x2="340" y2="0">
-        <stop offset="0%" stop-color="#6A00F4"/>
-        <stop offset="100%" stop-color="#C86BFA"/>
-     </linearGradient>
-     <linearGradient id="grad2" x1="0" y1="0" x2="340" y2="340">
-        <stop offset="0%" stop-color="#FFB027"/>
-        <stop offset="100%" stop-color="#C86BFA"/>
-     </linearGradient>
-  </defs>
-</svg>
+<svg width="340" height="340" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="340" height="340" fill="transparent"/><path d="M60 110 C140 60, 200 60, 270 110 C200 150, 140 150, 60 110 Z" stroke="url(#grad1)" stroke-width="18" fill="none" stroke-linecap="round"/><path d="M60 170 C140 120, 200 120, 270 170 C200 210, 140 210, 60 170 Z" stroke="url(#grad1)" stroke-width="18" fill="none" stroke-linecap="round"/><path d="M90 220 C150 260, 220 260, 260 215 C300 170, 260 120, 200 110" stroke="url(#grad2)" stroke-width="20" fill="none" stroke-linecap="round"/><defs><linearGradient id="grad1" x1="0" y1="0" x2="340" y2="0"><stop offset="0%" stop-color="#6A00F4"/><stop offset="100%" stop-color="#C86BFA"/></linearGradient><linearGradient id="grad2" x1="0" y1="0" x2="340" y2="340"><stop offset="0%" stop-color="#FFB027"/><stop offset="100%" stop-color="#C86BFA"/></linearGradient></defs></svg>

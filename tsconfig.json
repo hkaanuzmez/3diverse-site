@@ -12,18 +12,7 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
-    "jsx": "preserve",
-    "paths": {
-      "@/components/*": [
-        "./src/components/*"
-      ],
-      "@/lib/*": [
-        "./src/lib/*"
-      ],
-      "@/i18n/*": [
-        "./i18n/*"
-      ]
-    }
+    "jsx": "preserve"
   },
   "include": [
     "next-env.d.ts",

@@ -1,22 +1,26 @@
-datasource db { provider = "postgresql" url = env("DATABASE_URL") }
+generator client {
+  provider = "prisma-client-js"
+}
 
-generator client { provider = "prisma-client-js" }
+datasource db {
+  provider = "postgresql"
+  url      = env("postgresql://postgres:postgres@localhost:5432/postgres")
+}
 
 model Product {
-  id           String   @id @default(cuid())
-  titleTR      String
-  titleEN      String
-  slug         String   @unique
+  id            String   @id @default(cuid())
+  titleTR       String
+  titleEN       String
+  slug          String   @unique
   descriptionTR String?
   descriptionEN String?
-  price        Decimal  @db.Decimal(10,2)
+  price         Decimal  @db.Decimal(10,2)
   discountPrice Decimal? @db.Decimal(10,2)
-  stock        Int      @default(0)
-  published    Boolean  @default(true)
-  assets3d     Asset3D[]
-  variants     Variant[]
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  stock         Int      @default(0)
+  published     Boolean  @default(true)
+  assets3d      Asset3D[]
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 }
 
 model Asset3D {
@@ -27,44 +31,4 @@ model Asset3D {
   format    String
   usdzUrl   String?
   posterUrl String?
-  meta      Json?
-}
-
-model Variant {
-  id        String  @id @default(cuid())
-  product   Product @relation(fields: [productId], references: [id])
-  productId String
-  name      String
-  sku       String  @unique
-  price     Decimal @db.Decimal(10,2)
-  stock     Int     @default(0)
-  attributes Json?
-}
-
-model PriceHistory {
-  id        String   @id @default(cuid())
-  product   Product  @relation(fields: [productId], references: [id])
-  productId String
-  oldPrice  Decimal  @db.Decimal(10,2)
-  newPrice  Decimal  @db.Decimal(10,2)
-  changedAt DateTime @default(now())
-}
-
-model Order {
-  id        String   @id @default(cuid())
-  items     Json
-  subtotal  Decimal  @db.Decimal(10,2)
-  shipping  Decimal  @db.Decimal(10,2)
-  codFee    Decimal  @db.Decimal(10,2)
-  total     Decimal  @db.Decimal(10,2)
-  method    String
-  status    String   @default("PENDING")
-  createdAt DateTime @default(now())
-}
-
-model Setting {
-  id                    Int     @id @default(1)
-  freeShippingThreshold Decimal @db.Decimal(10,2) @default(300)
-  shippingFee           Decimal @db.Decimal(10,2) @default(29)
-  codFee                Decimal @db.Decimal(10,2) @default(20)
 }

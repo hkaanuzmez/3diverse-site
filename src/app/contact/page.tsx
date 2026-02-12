@@ -1,23 +1,20 @@
-export default function ContactPage(){
+export default function Contact(){
   return (
-    <div className="grid md:grid-cols-2 gap-8">
+    <section style={{display:'grid', gridTemplateColumns:'1fr', gap:24}}>
       <div>
-        <h1 className="text-2xl font-bold mb-4">İletişim</h1>
-        <form className="space-y-3">
-          <input className="w-full bg-brand-surface border border-brand-border rounded p-2" placeholder="Ad Soyad"/>
-          <input className="w-full bg-brand-surface border border-brand-border rounded p-2" placeholder="E-posta"/>
-          <input className="w-full bg-brand-surface border border-brand-border rounded p-2" placeholder="Konu"/>
-          <textarea className="w-full bg-brand-surface border border-brand-border rounded p-2" placeholder="Mesaj" rows={5}></textarea>
-          <button className="bg-gradient-to-r from-brand-primary to-brand-secondary px-4 py-2 rounded">Gönder</button>
+        <h1 style={{fontSize:24, fontWeight:700, marginBottom:12}}>İletişim</h1>
+        <form style={{display:'grid', gap:12}}>
+          <input placeholder="Ad Soyad" style={{background:'#16161C', border:'1px solid #27272A', borderRadius:8, padding:8}}/>
+          <input placeholder="E-posta" style={{background:'#16161C', border:'1px solid #27272A', borderRadius:8, padding:8}}/>
+          <input placeholder="Konu" style={{background:'#16161C', border:'1px solid #27272A', borderRadius:8, padding:8}}/>
+          <textarea placeholder="Mesaj" rows={5} style={{background:'#16161C', border:'1px solid #27272A', borderRadius:8, padding:8}} />
+          <button style={{padding:'10px 16px', borderRadius:8, background:'linear-gradient(90deg,#6A00F4,#C86BFA)', color:'#fff'}}>Gönder</button>
         </form>
       </div>
-      <div className="rounded border border-brand-border p-4">
-        <div className="text-sm text-gray-300 space-y-2">
-          <div>E-posta: diverse3d@outlook.com</div>
-          <div>WhatsApp: (admin panelinden eklenecek)</div>
-          <div>Harita: Yok</div>
-        </div>
+      <div style={{border:'1px solid #27272A', borderRadius:12, padding:12}}>
+        <div style={{fontSize:14, color:'#cbd5e1'}}>E‑posta: diverse3d@outlook.com</div>
+        <div style={{fontSize:14, color:'#9CA3AF'}}>WhatsApp: (admin panelinden eklenecek)</div>
       </div>
-    </div>
+    </section>
   )
 }

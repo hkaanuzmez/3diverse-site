@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "contact": "Contact",
+    "cart": "Cart"
+  },
+  "home": {
+    "title": "The New Era of Layer-by-Layer Creation",
+    "cta": "Explore Products"
+  },
+  "products": {
+    "title": "Products",
+    "add": "Add to Cart",
+    "preview": "3D Preview",
+    "loadMore": "Load more products"
+  },
+  "detail": {
+    "buyNow": "Buy Now",
+    "addToCart": "Add to Cart",
+    "desc": "Description",
+    "specs": "Tech Specs"
+  },
+  "cart": {
+    "title": "Your Cart",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "cod": "Cash on Delivery Fee",
+    "total": "Grand Total",
+    "checkout": "Proceed to Checkout"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "place": "Place Order"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "send": "Send"
+  }
+}

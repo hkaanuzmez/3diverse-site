@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "products": "Ürünler",
+    "contact": "İletişim",
+    "cart": "Sepet"
+  },
+  "home": {
+    "title": "Katman Katman Üretimin Yeni Adresi",
+    "cta": "Ürünleri Keşfet"
+  },
+  "products": {
+    "title": "Ürünler",
+    "add": "Sepete Ekle",
+    "preview": "3D Önizleme",
+    "loadMore": "Daha fazla ürün yükle"
+  },
+  "detail": {
+    "buyNow": "Hemen Sipariş Ver",
+    "addToCart": "Sepete Ekle",
+    "desc": "Açıklama",
+    "specs": "Teknik Bilgiler"
+  },
+  "cart": {
+    "title": "Sepetim",
+    "subtotal": "Ara Toplam",
+    "shipping": "Kargo",
+    "cod": "Kapıda Ödeme Ücreti",
+    "total": "Genel Toplam",
+    "checkout": "Ödemeye Geç"
+  },
+  "checkout": {
+    "title": "Ödeme Bilgileri",
+    "place": "Siparişi Tamamla"
+  },
+  "contact": {
+    "title": "İletişim",
+    "send": "Gönder"
+  }
+}
